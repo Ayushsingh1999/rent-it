@@ -1,0 +1,176 @@
+body{
+  margin: 0;
+  padding: 0;
+  /* background-color: #282C34; */
+  background-image: url("images/background/andre-tan-lRrNccxrTfQ-unsplash.jpg");
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#login{
+  display: none
+}
+.form
+{
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-color: #3C4049;
+  border-width: 2px;
+  background-color:rgba(0,0,0,0.2);
+  box-sizing: border-box;
+  padding:4%;
+  border-radius: 1%;
+  box-shadow: 0 3px 10px 4px #242527;
+  font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.sign{
+    width: 50%;
+    color: white;
+    background-color: #fc5656;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: center;
+}
+.log{
+  width: 50%;
+  color: white;
+  background-color: gray;
+  float: right;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align: center;
+}
+.log:hover, .sign:hover{
+  background-color: #791b1be0;
+}
+h1
+{
+  color: white;
+  text-transform: capitalize;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+span.ast{
+  color: #bdc5d5;
+  margin: 1px;
+}
+.sgnbtn
+{
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  background-color: #fc5656;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+.frow
+{
+  display: flex;
+  width: 100%;
+}
+.first{
+  float: left;
+  width: 100%;
+  margin-right: 5px
+}
+.first input{
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ebecee;
+  box-sizing: border-box;
+}
+.last{
+    float: right;
+    width: 100%;
+    margin-left: 5px
+}
+.last input{
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e9dddd;
+  box-sizing: border-box;
+}
+@media only screen and (orientation:portrait){
+  .frow
+    {
+      display: inline-block;
+      width: 100%;
+    }
+  .first{
+    float:left;
+    width: 100%;
+    margin-right: 0px
+  }
+  .last{
+    float: right;
+    width: 100%;
+    margin-left: 0px
+  }
+}
+.email input, .pass input{
+  float:left;
+  width:100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c3d4f7;
+  box-sizing: border-box;
+}
+input
+{
+  height: 40px;
+  margin: 10px 0px;
+  padding: 5px;
+  font-size: 20px;
+  background-color: transparent;
+  color: white;
+}
+label {
+  position: absolute;
+  font-size: 20px;
+  transform: translate(8px,16px);
+  transition: all 0.25s ease;
+  pointer-events: none;
+  color: white;
+}
+.label-active
+{
+      font-size: 14px;
+      transform: translate(1px,49px);
+    }
+
+.ast:active{
+        display: none;
+      }
+.email, .pass
+{
+  display: flex;
+}
+#login a{
+  float: right;
+  color: rgb(237, 221, 221);
+  text-decoration: none;
+}
+#login a:hover{
+  text-decoration: underline;
+}
